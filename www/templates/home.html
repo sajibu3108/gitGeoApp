@@ -1,0 +1,39 @@
+
+<ion-view title="Aplicacion Geolocalizacion">
+    <ion-content class="has-header" padding="true">
+      <label class="item item-input">
+        <span class="input-label">NombreUsuario</span>
+        <input type="text">
+      </label>
+      <button class="button button-full button-dark">
+          Guardar Posicion
+      </button>
+      <div class="card">
+                      <div class="item item-divider">
+                        Geolocalizacion
+                      </div>
+
+                      <div class="item item-body">
+                        <strong>Latitud: </strong>  {{latitud}}
+                      </div>
+                      <div class="item item-body">
+                        <strong>Longitud: </strong> {{longitud}}
+                      </div>
+
+                    </div>
+
+          <div class="card">
+                <div class="item item-divider">
+                  Brujula
+                </div>
+
+                <div class="item item-body">
+                  <strong>Magnetic Heading</strong> &nbsp {{heading.magneticHeading}}
+                </div>
+              </div>
+
+
+
+
+    </ion-content>
+</ion-view>
